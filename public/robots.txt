@@ -1,0 +1,9 @@
+# https://www.robotstxt.org/robotstxt.html
+
+User-agent: *
+Disallow: /node_modules/
+Disallow: /*.pnp*
+Disallow: /*.md
+Disallow: /*temp*
+Disallow: /*tutorial*
+Disallow: /.gitignore

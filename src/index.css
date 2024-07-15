@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+* { user-select: none; }
+img { pointer-events: none;  }
+.title{
+  font-family: Quicksand;
+  font-size: 40px;
+  margin: 10px;
+}
+:root { --chessboard-width: 640px; }
+.chessboard {
+  display: flex;
+  flex-wrap: wrap;
+  width: var(--chessboard-width);
+  width: 640px;
+  border: 5px solid black;
+  border-radius: 1%;
+  overflow: hidden;
+}
+.square {
+  position: relative;
+  width: calc(var(--chessboard-width) / 8);
+  height: calc(var(--chessboard-width) / 8);
+}
+.square * {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.piece { z-index: 2; }
+.tile { z-index: 1; }
+.light { background-color: #A3C4DC; }
+.dark { background-color: #5885AF; }
+.selected { background-color: #61DAFB; }
